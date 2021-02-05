@@ -1,0 +1,144 @@
+/* Removes x-axis overflow space */
+body {
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    background-color: #2C3033;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #FBFBFD;
+}
+
+/* Phones and tablets */
+@media only screen and (max-width: 768px) {
+    .col-s {
+        width: 100%;
+    }
+
+    .container {
+        width: 80%;
+        height: 1000px;
+        margin: auto;
+        background-color: #fff;
+    }
+
+    .container-fluid {
+        width: 100%;
+        background-color: #222426;
+    }
+
+    .header-box {
+        height: 4em;
+        padding-top: 0.25em;
+    }
+    
+    .header-element {
+        font-size: 1em;
+        padding: 0 0 0 10px;
+        width: 20%;
+        float: left;
+        border-left: 1px solid white;
+    }
+
+    .header-attract {
+        margin-top: 7.5px;
+    }
+
+    .nav-box {
+        width: 100%;
+        height: 2em;
+        background-color: #259BCA;
+    }
+
+    .nav-shadow {
+        height: 2em;
+        border-bottom: 2.5px solid black;
+    }
+    
+    .nav-element {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        float: left;
+        margin: auto;
+        width: 24.25%;
+        text-align: center;
+    }
+
+    .nav-element:hover {
+        background-color: #90D277;
+    }
+    
+    .nav-white-space {
+        float: left;
+        width: 1%;
+        height: 32px;
+        background-color: #259BCA
+    }
+    
+    .logo {
+        width: 40%;
+        font-size: 2em;
+        text-align: left;
+        padding: 0.25em 0.25em 0 10px;
+        margin-right: 0.5em;
+        border: none;
+    }
+    
+    .col-s {
+        border: 1px solid black;
+    }
+    
+    
+    li {
+        list-style-type: none;
+        float: left;
+    
+    }
+}
+
+@media screen and (min-width: 525px) and (max-width: 768px) {
+
+    .header-element {
+        width: 19%;
+        float: left;
+    }
+    
+    .logo {
+        width: 50%;
+    }
+}
+
+/* Desktops and above */
+@media only screen and (min-width: 768px) {
+    .col-norm {
+        float: left;
+        margin: 5px;
+        padding: 5px;
+        width: 5%;
+    }
+
+}
+
+/* Resets floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+
+/* Color Palettes 
+Nav Black: #222426
+
+Light Black: #2C3033
+
+Blue: #259BCA
+
+Green: #90D277
+
+Orange: #EB7248
+
+White: #FBFBFD
+
+*/
