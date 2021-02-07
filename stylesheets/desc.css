@@ -6,7 +6,15 @@ body {
     font-size: 1em;
     background-color: #2C3033;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: #FBFBFD;
+    color: #F5f5f7;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    overflow: hidden;
+
 }
 
 /* Phones and tablets */
@@ -17,9 +25,10 @@ body {
 
     .container {
         width: 80%;
-        height: 1000px;
         margin: auto;
-        background-color: #fff;
+        background-color: #FBFBFD;
+        z-index: -1;
+        margin-top: 80px;
     }
 
     .container-fluid {
@@ -92,7 +101,88 @@ body {
     li {
         list-style-type: none;
         float: left;
-    
+    }
+
+    .main-title-box {
+        color: #222426;
+        text-align: center;
+        font-size: 2em;
+        padding-top: 0.5em;
+    }
+
+    .sub-title-box {
+        color: #222426;
+        text-align: center;
+        padding: 0.5em;
+        padding-bottom: 1em;
+    }
+
+    .primary-photo-title {
+        font-size: 1.5em;
+        padding: 10px 0;
+        margin-bottom: 10px;
+    }
+
+    .container-gallery {
+        width: 80%;
+        margin: auto;
+        background-color: #90D277;
+    }
+
+    .container-gallery-2 {
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+        background-color:#557a8d;
+    }
+
+    .primary-photo-box {
+        background-color: #90D277;
+    }
+
+    .photo-alt {
+        padding-top: 2.5px;
+        padding-right: 110px;
+        /* Prevents text wrap */
+        white-space: nowrap;
+    }
+
+    /* Need a better n selector to hightlight this */
+    .photo-alt-alt {
+        padding-top: 2.5px;
+        padding-left: 110px;
+        white-space: nowrap;
+    }
+
+    /* Width should be 100% on mobile, and 50% on wider screens */
+    .primary-photo, .gallery-photo {
+        padding: 10px 0;
+        margin: auto;
+        /* Works cause img is block level item in a div */
+        text-align: center;
+    }
+
+    /* Images scale down and up based on viewport size */
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    .primary-photo-attr {
+        width: 90%;
+        margin: auto;
+        /* Works cause img is block level item in a div */
+        text-align: center;
+        padding: 10px;
+        padding-bottom: 20px;
+        text-align: left;
+        color: #222426;
+    }
+
+    #line-under {
+        font-weight: bold;
+        color: #F5f5f7;
+        font-size: 1.1em;
     }
 }
 
