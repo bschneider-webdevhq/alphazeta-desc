@@ -111,6 +111,17 @@ header {
         padding-bottom: 0;
     }
 
+    .photo-gallery-box {
+        width: 100%;
+        text-align: center;
+        color: #FBFBFD;
+    }
+
+    .photo-gallery-title {
+        font-size: 1.5em;
+        padding-bottom: 7.5px;
+    }
+
     .sub-title-box {
         color: #222426;
         text-align: center;
@@ -121,6 +132,7 @@ header {
     .primary-photo-title {
         font-size: 1.5em;
         padding: 0.5em;
+        padding-bottom: 10px;
         margin-bottom: 10px;
     }
 
@@ -157,7 +169,7 @@ header {
         width: 80%;
         margin: auto;
         padding-top: 20px;
-        background-color:#557a8d;
+        background-color:#222426;
     }
 
     .primary-photo-box {
@@ -165,7 +177,6 @@ header {
     }
 
     .photo-alt {
-        padding-top: 2.5px;
         padding-right: 110px;
         /* Prevents text wrap */
         white-space: nowrap;
@@ -182,6 +193,7 @@ header {
     }
 
     .photo-shadow-blue {
+        position: relative;
         background-color: #405c69;
     }
 
@@ -197,6 +209,35 @@ header {
         height: 120px;
         margin-bottom: -100px;
         background-image: linear-gradient(to bottom, rgba(120, 175, 100, 0), rgba(120, 175, 100, 1));
+    }
+
+    .fade-bottom-gallery {
+        width: 100%;
+        margin: auto;
+        position: relative;
+        bottom: 60px;
+        height: 60px;
+        background-image: linear-gradient(to bottom, rgba(85, 122, 141, 0), rgba(85, 122, 141, 1));
+        border-bottom: 1px solid rgba(85, 122, 141, 1);
+    }
+
+    .gallery-photo-footer {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        margin: auto;
+        height: 70px;
+        margin-top: -50px;
+        margin-bottom: 10px;
+        color: #FBFBFD;
+        background-color: #222426;
+        border-top: 1px solid #222426;
+        border-bottom: 1px solid #222426;
+    }
+
+    .gallery-photo-footer > div {
+        padding: 10px;
+        padding-left: 25px;
     }
 
     .hide-text {
@@ -216,6 +257,7 @@ header {
         /* Works cause img is block level item in a div */
         text-align: center;
     }
+
 
     /* Images scale down and up based on viewport size */
     img {
@@ -247,6 +289,19 @@ header {
         float: left;
         padding-left: 10px;
         margin-right: 10px;
+    }
+
+    .shipping-title {
+        font-size: 1.5em;
+        padding-bottom: 25px;
+    }
+
+    #ship-image {
+        height: 300px;
+    }
+
+    .shipping-desc {
+        text-align: left;
     }
     
 }

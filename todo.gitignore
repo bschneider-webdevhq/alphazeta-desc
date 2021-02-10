@@ -1,0 +1,43 @@
+** Add descriptions and spacing for each picture in the gallery
+
+** Add #_target functionality to each nav bar icon
+
+** Develop the shipping, return, and contact section.
+
+** Develop the footer.
+
+** No global selectors allowed. .class and #id only. Nor absolute positioning.
+
+** Delivery section should provide covid assurances
+
+*** Warranty Creation:
+** Items valued over $15 that include a warranty or service contract must contain additional details in their listing description. You need to include one of the following:
+
+The full text of the written warranty or service contract
+A statement explaining how to get a free copy of the written warranty or service contract upon written request
+
+
+** Mobile description, need to squeeze this in somehow:
+<div vocab="https://schema.org/" typeof="Product">
+<span property="description">
+	This paragraph contains almost 800 characters of text to be displayed in the mobile item description.
+	And the text in this paragraph through this sentence contains 250 characters, which is the amount we
+	will display without any actions on your part. When you tag a paragraph with these HTML breaks, the 
+	content will be displayed to shoppers looking at your item. This will allow the shopper to see the 
+	key information you want to display, without them having to click through to the complete description. 
+	If your complete description is 800 characters or less and uses basic HTML we will display the entire 
+	description without any action on your behalf – so the best practice is to keep it within 800 characters. 
+	If you have a long description, make it easy for your buyers by using this option.
+</span>
+</div>
+
+--- --- ---
+
+** eBay Side Issues (see pictures for more info.)
+
+Nav bar items not centered
+
+Fix Implemented, check ebay:
+Gallery photo fade not positioned on image footer.
+
+Padding incorrect for content between gallery photos.
