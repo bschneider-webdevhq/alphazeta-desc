@@ -5,33 +5,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheets/desc.css">
-    <title>Document</title>
+    <title>AlphaZeta</title>
 </head>
 
-<body style>
-    <header>
+<body id="home">
+    <header id="header">
         <div class="container-fluid header-box">
-            <div class="header-element logo">AlphaZeta</div>
-            <div class="header-attract">
-                <div class="header-element">Free <br>Shipping</div>
-                <div class="header-element">100% <br>Feedback</div>
-            </div>
+            <div class="header-element logo"><b>AlphaZeta</b></div>
+            <div class="header-element header-attract hidden-element">Free <br>Shipping</div>
+            <div class="header-element header-attract">100%<br>Feedback</div>
             <div class="clearfix"></div>
         </div>
         <div class="container-fluid nav-shadow">
             <nav class="nav-box">
-                <div class="nav-element">Top</div>
+                <a class="link" href="#home">
+                    <div class="nav-element">Home</div>
+                </a>
                 <div class="nav-white-space"> </div>
-                <div class="nav-element">Gallery</div>
+                <a class="link" href="#gallery">
+                    <div class="nav-element">Gallery</div>
+                </a>
                 <div class="nav-white-space"></div>
-                <div class="nav-element">Description</div>
+                <a class="link" href="#item-description">
+                    <div class="nav-element">Features</div>
+                </a>
                 <div class="nav-white-space"></div>
-                <div class="nav-element">Shipping</div>
+                <a class="link" href="#gallery">
+                    <div class="nav-element">Shipping</div>
+                </a>
+                <div class="nav-white-space hidden-element"></div>
+                <a class="link hidden-element" href="#gallery">
+                    <div class="nav-element hidden-element">Store</div>
+                </a>
             </nav>
         </div>
     </header>
     <br>
-    <section class="container">
+    <section class="container" id="home">
         <div class="main-title-box">
             Brand Product Title
         </div>
@@ -46,16 +56,14 @@
                 <div class="primary-photo-title">Available now with AlphaZeta on eBay.</div>
                 <div class="photo-shadow-green">
                     <img src="https://picsum.photos/900" alt="placeholder-photo-1">
-                    <div class="fade-bottom"><span class="hide-text">Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit repellat neque amet.
-                            Ipsam aut qui, expedita facere autem iure voluptate exercitationem officia ad assumenda
-                            rerum quo laboriosam, illo nesciunt repudiandae.</span>
+                    <div class="fade-bottom">
                     </div>
                 </div>
             </div>
-            <div class="primary-photo-attr">
+            <div class="primary-photo-attr" id="gallery">
                 <span id="line-under">What you see is what you get. Guaranteed.</span><br><br>
-                You buy, we deliver, and you get what you want fast. AlphaZeta on eBay ensures fast, safe, and free delivery on your
+                You buy, we deliver, and you get what you want fast. AlphaZeta on eBay ensures fast, safe, and free
+                delivery on your
                 orders or your money back.
             </div>
         </div>
@@ -75,7 +83,6 @@
                         <b>Attract One. Attract Statement.</b>
                         <br><br>
                         Details on the two attract statements above.
-                        <br><br>
                     </div>
                 </div>
             </div>
@@ -91,7 +98,6 @@
                     <b>Attract One. Attract Statement.</b>
                     <br><br>
                     Details on the two attract statements above.
-                    <br><br>
                 </div>
             </div>
         </div>
@@ -99,14 +105,28 @@
             <div class="photo-shadow-blue">
                 <img src="https://picsum.photos/900" alt="placeholder-photo-1">
             </div>
-            <div class="fade-bottom-gallery">
+            <div class="fade-bottom-gallery" id="item-description">
             </div>
             <div class="gallery-photo-footer">
                 <div>
-                    <b>Attract One. Attract Statement.</b>
+                    <b>Product Description</b>
                     <br><br>
-                    Details on the two attract statements above.
-                    <br><br>
+                    <div id="ebay-mobile-description" vocab="https://schema.org/" typeof="Product">
+                        <span property="description">
+                            <!-- Mobile Description Goes Below-->
+                            This paragraph contains almost 800 characters of text to be displayed in the mobile item
+                            description. And the text in this paragraph through this sentence contains 250 characters,
+                            which is the
+                            amount we will display without any actions on your part. When you tag a paragraph with these
+                            HTML breaks, the content will be displayed to shoppers looking at your item. This will allow
+                            the shopper to see the key information you want to display, without them having to click
+                            through to the complete description. If your complete description is 800 characters or less
+                            and uses basic HTML we will display the entire
+                            description without any action on your behalf – so the best practice is to keep it within
+                            800 characters. If you have a long description, make it easy for your buyers by using this
+                            option.
+                        </span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -114,52 +134,95 @@
     <section class="container-etc">
         <div class="etc-box">
             <div class="etc-box-details">
-                <div class="shipping-title">Shipping & Safety Details</div>
+                <div class="shipping-title"><b>Shipping & Safety Details</b></div>
                 <div class="photo-shadow-orange">
-                    <img id="ship-image" src="img/fast_safe_delivery.jpg" alt="fast_free_overnight__first_class_delivery">
+                    <img class="desc-image" src="img/fast_safe_delivery.jpg"
+                        alt="fast_free_overnight__first_class_delivery">
+                </div>
+                <div class="fade-bottom-shipping">
                 </div>
                 <div class="shipping-desc">
                     <b>It pays to shop with AlphaZeta.</b><br><br>
                     Buy this listing and receive all of these perks below:
-                    Free USPS 1st Class Shipping. Free Tracking.
-                    Less than 1 day handling. 
-                    Safety: Items are throughly sanitized before shipment using UV disinfectant technology.
+                    <div class="white-space"></div>
+                    <div class="mobile-perk-bubbles">
+                        <div class="perk">
+                            <b>Shipping:</b><br>
+                            Free.<br>
+                            Free USPS 1st Class Shipping.
+                        </div>
+                        <div class="perk">
+                            <b>Tracking:</b><br>
+                            Free. <br>Watch every move your package makes.
+                        </div>
+                        <div class="perk">
+                            <b>Handling:</b><br>
+                            Less than 1 business day. <br>
+                            Get your stuff sooner.
+                        </div>
+                        <div class="perk">
+                            <b>Safety:</b><br>
+                            The same as the big guys.<br>
+                            Items are throughly sanitized with UV disinfectant technology.
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="box-details">
+                    <div class="shipping-title"><b>Returns & Refunds</b></div>
+                    <div class="photo-shadow-orange">
+                        <img class="desc-image" src="img/full_refund.jpg" alt="placeholder-photo-1">
+                    </div>
+                    <div class="fade-bottom-shipping">
+                    </div>
+                    <div class="shipping-desc">
+                        <b>Get your money back with no questions asked.</b><br><br>
+                        You work hard for your money. If you don't like it, send it back our way and pocket your cash.
+                        Simple and easy.<br><br>
+                        Here's what you get when you buy with us:
+                        <div class="white-space"></div>
+                        <div class="mobile-perk-bubbles">
+                            <div class="perk">
+                                <b>Before 30 Days:</b><br>
+                                All costs covered.<br>
+                                Full refund and return shipping is on us.
+                            </div>
+                            <div class="perk">
+                                <b>Before 60 Days:</b><br>
+                                Most costs covered.<br>
+                                Ship the item back and get some cash back.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="box-details">
+                    <div class="shipping-title"><b>Questions & Contact</b></div>
+                    <div class="photo-shadow-orange">
+                        <img class="desc-image" src="img/less_than_24_hour_contact_time.jpg" alt="placeholder-photo-1">
+                    </div>
+                    <div class="fade-bottom-shipping">
+                    </div>
+                    <div class="shipping-desc">
+                        <b>Questions? Drop us a line at anytime.</b><br><br>
+                        Inquiries, concerns, or if you just want to say hello, reach out to us at anytime you like.
+                        We'll get back to you in less than a business day.
+                    </div>
                 </div>
             </div>
-            <br>
-            <div class="box-details">
-                <div class="shipping-title">Returns</div>
-                <div class="photo-shadow-orange">
-                    <img src="https://picsum.photos/300" alt="placeholder-photo-1">
-                </div>
-                <div class="shipping-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sed amet, velit architecto eveniet
-                    totam, optio soluta explicabo.
-                </div>
-            </div>
-            <br>
-            <div class="box-details">
-                <div class="shipping-title">Contact Us</div>
-                <div class="photo-shadow-orange">
-                    <img src="https://picsum.photos/300" alt="placeholder-photo-1">
-                </div>
-                <div class="shipping-desc">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sed amet, velit architecto eveniet
-                    totam, optio soluta explicabo.
-                </div>
-            </div>
-        </div>
     </section>
-    <footer class="container-footer">
+    <section class="container-footer">
         <div class="footer-box">
             <div class="footer-logo">
-                Made with Love at WebDevHQ, LLC
+                <span class="hidden-element">Created at</span> WebDevHQ, LLC
             </div>
-            <div class="footer-other">
-                Other things here.
-            </div>
+            <a class="link hidden-element" href="#home">
+                <div class="footer-other">
+                    Back to Top
+                </div>
+            </a>
+            <div class="clearfix"></div>
         </div>
-    </footer>
+    </section>
 </body>
 
 
