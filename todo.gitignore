@@ -8,9 +8,19 @@
 
 ** Desktop version. Font size: 105% is a good place to start.
 
+** Play around with max height for images to see what works best
+
 ** Fix all nav links.
 
+** Accessibility - use aria-label 
+
+** Under product description, a white line, then bubbles for Item location, Warranty, and Condition
+
 ** nav links don't unlit when clicked on on mobile.
+
+** padding needed on desktop nav elements for spacing and hover area
+
+** for logo, flip blue and white, make az one word, center content, and have the black behind the dude be #222426.
 
 The full text of the written warranty or service contract
 A statement explaining how to get a free copy of the written warranty or service contract upon written request

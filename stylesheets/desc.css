@@ -18,7 +18,7 @@ body {
 }
 
 /* Phones and tablets 768 */
-@media only screen and (max-width: 2500px) {
+@media only screen and (max-width: 2550px) {
 
     .container {
         width: 80%;
@@ -34,7 +34,7 @@ body {
     }
 
     .header-box {
-        height: 4em;
+        height: 4.25em;
         padding-top: 0.25em;
     }
 
@@ -45,6 +45,10 @@ body {
         margin-right: 20px;
         padding-left: 5px;
         border-left: 1px solid #FBFBFD;
+    }
+
+    .desktop-nav-element, .desktop-nav {
+        display: none;
     }
 
     .nav-box {
@@ -63,7 +67,8 @@ body {
         padding-top: 7px;
         padding-bottom: 7px;
         float: left;
-        width: 19.2%;
+        padding: 6.5px 1.02vw;
+        width: 17.1%;
     }
 
     .link {
@@ -83,12 +88,12 @@ body {
     }
     
     .logo {
+        border: 1px solid black;
+        margin-top: -5px;
         float: left;
-        width: 45%;
-        font-size: 2em;
-        text-align: left;
-        padding-top: 7.5px;
-        padding-left: 15px;
+        width: auto;
+        height: 69.5px;
+        object-fit: scale-down;
     }
 
     .main-title-box {
@@ -241,7 +246,7 @@ body {
 
     /* Images scale down and up based on viewport size */
     img {
-        height: auto;
+        height: 300px;
         max-width: 100%;
         /* Removes bottom space set by each image's parent container */
         margin-bottom: -2.5px;
@@ -376,7 +381,15 @@ body {
     }
 }
 
+@media only screen and (min-width: 459px) {
+    
+}
+
 @media only screen and (max-width: 459px) {
+
+    .hidden-element {
+        display: inline
+    }
 
     .footer-logo {
         width: 100%;
@@ -403,17 +416,46 @@ body {
 
 /* Desktops and above */
 @media only screen and (min-width: 768px) {
-    .col-norm {
+
+    .desktop-nav-element, .desktop-nav {
+        display: inline;
+    }
+
+    .desktop-nav {
         float: left;
-        margin: 5px;
-        padding: 5px;
-        width: 5%;
+        width: fit-content;
+        margin-top: 21px;
+        background-color: initial;
+        text-align: left;
     }
 
-    * {
-        font-size: 105%;
+    .desktop-nav-element {
+        width: block;
+        float: left;
+        padding: 0 1.5em;
     }
 
+
+    .desktop-nav-element:hover {
+        color: #259BCA;
+    }
+
+    .link {
+        display: none;
+    }
+
+    .nav-white-space {
+        display: none;
+    }
+
+    .container-fluid.nav-shadow, .mobile-nav {
+        width: 100%;
+        background-color: #EB7248
+    }
+    
+    .header-attract {
+        display: none;
+    }
 }
 
 /* Resets floats */
