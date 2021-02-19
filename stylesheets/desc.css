@@ -18,7 +18,7 @@ body {
 }
 
 /* Phones and tablets 768 */
-@media only screen and (max-width: 2550px) {
+@media only screen and (max-width: 2500px) {
 
     .container {
         width: 80%;
@@ -41,7 +41,7 @@ body {
     .header-attract {
         float: right;
         width: fit-content;
-        margin-top: 7.5px;
+        margin-top: 12.5px;
         margin-right: 20px;
         padding-left: 5px;
         border-left: 1px solid #FBFBFD;
@@ -68,10 +68,10 @@ body {
         padding-bottom: 7px;
         float: left;
         padding: 6.5px 1.02vw;
-        width: 17.1%;
+        width: 17.075%;
     }
 
-    .link {
+    .link, .desktop-link {
         text-decoration: none;
         color: inherit;
     }
@@ -173,7 +173,7 @@ body {
         position: relative;
     }
 
-    .photo-shadow-green > img {
+    .photo-shadow-green > .image {
         margin-bottom: -25px;
     }
 
@@ -220,6 +220,10 @@ body {
         border-bottom: 1px solid #222426;
     }
 
+    .gallery-photo-footer#shipping {
+        margin-bottom: 115px;
+    }
+
     .gallery-photo-footer > div {
         padding: 10px;
         padding-left: 25px;
@@ -245,7 +249,7 @@ body {
 
 
     /* Images scale down and up based on viewport size */
-    img {
+    .image {
         height: 300px;
         max-width: 100%;
         /* Removes bottom space set by each image's parent container */
@@ -269,7 +273,7 @@ body {
         font-size: 1.1em;
     }
 
-    .description-box > img {
+    .description-box > .image {
         width: 50%;
         float: left;
         padding-left: 10px;
@@ -329,6 +333,21 @@ body {
         margin-top: 10px;
     }
 
+    .additional-product-features {
+        position: relative;
+        right: 0.75em;
+        width: 90%;
+        margin: auto;
+    }
+
+    .additional-product-features .perk {
+        position: relative;
+        color: #F5f5f7;
+        text-align: center;
+        width: 100%;
+        padding: 7px;
+    }
+
     .container-footer {
         width: 80%;
         height: 65px;
@@ -345,19 +364,26 @@ body {
 
     .footer-logo {
         float: left;
-        width: 60%;
-        padding-left: 25px;
+        width: 65%;
+        padding-left: 26px;
     }
 
     .footer-other {
-        float: left;
-        text-align: right;
-        width: 25%;
+        color: #222426;
+        width: fit-content;
+        white-space: nowrap;
+        float: right;
+        margin-right: 26px;
+        text-decoration: none;
+    }
+
+    .footer-other:hover {
+        color: #259BCA;
     }
 }
 
 /* Overflow solution for header and nav bar. Removes 1 header and nav element while resizing current elements. For small mobile devices. */
-@media only screen and (max-width: 359px) {
+@media only screen and (max-width: 520px) {
     .hidden-element {
         display: none;
     }
@@ -368,27 +394,11 @@ body {
     }
 
     .nav-element {
-        width: 24.25%;
+        width: 22.075%;
     }
 
     .container-footer {
         height: 60px;
-    }
-
-    .footer-logo {
-        width: 100%;
-        margin-bottom: 25px;
-    }
-}
-
-@media only screen and (min-width: 459px) {
-    
-}
-
-@media only screen and (max-width: 459px) {
-
-    .hidden-element {
-        display: inline
     }
 
     .footer-logo {
@@ -399,12 +409,10 @@ body {
     }
 
     .footer-other {
-        float: right;
-        padding-right: 25px;
-        width: 80%;
+        width: 100%;
         margin: auto;
-        text-align: right;
-        margin: 25px 0;
+        text-align: center;
+        padding: 16px 0;
     }
 
     .container-footer {
@@ -413,6 +421,20 @@ body {
 }
 
 
+
+@media only screen and (max-width: 359px) {
+    .header-attract {
+        display: none;
+    }
+
+    .container-fluid .header-box {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100%;
+    }
+}
 
 /* Desktops and above */
 @media only screen and (min-width: 768px) {
@@ -424,15 +446,14 @@ body {
     .desktop-nav {
         float: left;
         width: fit-content;
-        margin-top: 21px;
+        margin-top: 22px;
         background-color: initial;
         text-align: left;
     }
 
+    /* Don't float these, this sets a new inline block that fails to horizontally set on inital page load */
     .desktop-nav-element {
-        width: block;
-        float: left;
-        padding: 0 1.5em;
+        padding: 10px 16px;
     }
 
 
@@ -442,6 +463,11 @@ body {
 
     .link {
         display: none;
+    }
+
+    .btt-link {
+        display: block;
+        text-decoration: none;
     }
 
     .nav-white-space {
