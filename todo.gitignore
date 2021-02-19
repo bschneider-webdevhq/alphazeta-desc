@@ -1,21 +1,22 @@
+# Needed
 
+# CRITICAL
 
-** Cover photo for each listing template needed. Create on Gimp, think like apps on the app store ie. SEGA, a shadow in the bottom or lower right hand corner of each listing. More attraction headings like free shipping, five stars, etc. a plus
+# Nice to have
 
 ** Charity section if needed
 
-** Desktop version. Font size: 105% is a good place to start.
+** Font size responsiveness: 105% is a good place to start.
+
+** Increased photo height for larger devices.
 
 ** Accessibility - use aria-label 
 
 
---- --- ---
+# eBay Server Side Issues
 
-** eBay Side Issues (see pictures for more info.)
+** Nav bar items not centered
 
-Nav bar items not centered
+** Gallery photo fade not positioned on image footer.
 
-Fix Implemented, check ebay:
-Gallery photo fade not positioned on image footer.
-
-Padding incorrect for content between gallery photos.
+** Padding incorrect for content between gallery photos.
