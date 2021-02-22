@@ -34,14 +34,14 @@ body {
     }
 
     .header-box {
-        height: 4.25em;
+        height: fit-content;
         padding-top: 0.25em;
     }
 
     .header-attract {
         float: right;
         width: fit-content;
-        margin-top: 12.5px;
+        margin-top: 11.5px;
         margin-right: 20px;
         padding-left: 5px;
         border-left: 1px solid #FBFBFD;
@@ -53,43 +53,36 @@ body {
 
     .nav-box {
         width: 100%;
-        height: 2em;
+        height: 32px;
         background-color: #259BCA;
         text-align: center;
     }
 
     .nav-shadow {
-        height: 2em;
-        border-bottom: 2.5px solid black;
+        height: fit-content;
     }
     
     .nav-element {
-        padding-top: 7px;
-        padding-bottom: 7px;
         float: left;
-        padding: 6.5px 1.02vw;
-        width: 17.075%;
+        padding: 6px 1.04vw;
+        width: 17.85%;
+    }
+
+    .nav-element:hover, .nav-element:focus {
+        /* Nav elements must be dynamically updated on hover. This prevents
+        an ebay side issue where nav elements padding was overflowing outside
+        of their container */
+        height: 20px;
+        background-color: #90D277;
     }
 
     .link, .desktop-link {
         text-decoration: none;
         color: inherit;
     }
-
-    .nav-element:hover, .nav-element:active  {
-        background-color: #90D277;
-    }
-    
-    .nav-white-space {
-        float: left;
-        width: 1%;
-        height: 32px;
-        background-color: #259BCA
-    }
     
     .logo {
-        border: 1px solid black;
-        margin-top: -5px;
+        margin-top: -2.5px;
         float: left;
         width: auto;
         height: 69.5px;
@@ -102,6 +95,7 @@ body {
         font-size: 2em;
         padding: 0.5em;
         padding-bottom: 0;
+        padding-top: 32px;
     }
 
     .photo-gallery-box {
@@ -119,7 +113,7 @@ body {
         color: #222426;
         text-align: center;
         padding: 0.5em;
-        padding-bottom: 1em;
+        padding-bottom: 24px;
     }
 
     .primary-photo-title {
@@ -154,6 +148,7 @@ body {
         width: 80%;
         margin: auto;
         padding-top: 20px;
+        padding-bottom: 16px;
         background-color:#222426;
     }
 
@@ -203,14 +198,12 @@ body {
         bottom: 60px;
         height: 60px;
         background-image: linear-gradient(to bottom, rgba(85, 122, 141, 0), rgba(85, 122, 141, 1));
-        border-bottom: 1px solid rgba(85, 122, 141, 1);
     }
 
     .gallery-photo-footer {
         position: relative;
         text-align: left;
         width: 100%;
-        margin: auto;
         height: fit-content;
         margin-top: -50px;
         margin-bottom: 10px;
@@ -250,10 +243,9 @@ body {
 
     /* Images scale down and up based on viewport size */
     .image {
-        height: 300px;
+        height: 350px;
         max-width: 100%;
         /* Removes bottom space set by each image's parent container */
-        margin-bottom: -2.5px;
     }
 
     .primary-photo-attr {
@@ -281,6 +273,8 @@ body {
     }
 
     .shipping-title {
+        width: 80%;
+        margin: auto;
         font-size: 1.5em;
         padding-bottom: 25px;
     }
@@ -300,7 +294,7 @@ body {
         width: 100%;
         margin: auto;
         position: relative;
-        bottom: 60px;
+        bottom: 58px;
         height: 60px;
         background-image: linear-gradient(to bottom, rgba(235, 114, 72, 0), rgb(235, 114, 72, 1));
     }
@@ -394,7 +388,7 @@ body {
     }
 
     .nav-element {
-        width: 22.075%;
+        width: 22.8%;
     }
 
     .container-footer {
@@ -439,6 +433,14 @@ body {
 /* Desktops and above */
 @media only screen and (min-width: 768px) {
 
+    .header-box {
+        border-bottom: 1px solid black;
+    }
+
+    .nav-box.mobile-nav {
+        display: none;
+    }
+
     .desktop-nav-element, .desktop-nav {
         display: inline;
     }
@@ -446,7 +448,7 @@ body {
     .desktop-nav {
         float: left;
         width: fit-content;
-        margin-top: 22px;
+        margin-top: 24px;
         background-color: initial;
         text-align: left;
     }
@@ -461,23 +463,14 @@ body {
         color: #259BCA;
     }
 
-    .link {
+    .link, .btt-link {
         display: none;
-    }
-
-    .btt-link {
-        display: block;
-        text-decoration: none;
     }
 
     .nav-white-space {
         display: none;
     }
 
-    .container-fluid.nav-shadow, .mobile-nav {
-        width: 100%;
-        background-color: #EB7248
-    }
     
     .header-attract {
         display: none;
