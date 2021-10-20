@@ -12,6 +12,7 @@ This template provides an alternative to eBay sellers who either utilize the bas
 - Pure CSS framework that is 100% compatible with eBay's agreements.
 - Flawless mobile, tablet, and web responsiveness.
 - SEO Keyword imbedding for front page exposure.
+- Mobile Description Autofill
 - Interactive Call to Actions to Seller's Stores, Inventory, and more.
 - A dynamic, high resolution library for your listing's pictures.
 - A sleek, easy-to-read UI.
